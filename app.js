@@ -47,6 +47,11 @@ app.get('/underwater',function(req,res){
 
 });
 
+app.get('/end',function(req,res){
+       
+     res.sendFile(__dirname + '/public/end.html');
+
+});
   
  app.listen(5000);
 
