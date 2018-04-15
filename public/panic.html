@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<link href="style/style.css" rel="stylesheet">
+		<script src="scripts/panic.js"></script>
+
+    </head>
+    <body>
+    	<img src="http://localhost:5000/IMG_6849.JPG" id="background-image" width="100%">
+    	<div class="container" align="center">
+    		<h2>Panic Room</h2>
+
+    		<p id="form-question"> What is the time on the clock? </p>
+			<div class="row" id="form-row">
+				<div class="col-md-4 col-md-offset-4">
+					<form align="center">
+						<div class="input-append bootstrap-timepicker-component">
+							<input type="time" name="usr_time" id="answer">
+						</div>
+				  	</form>
+		 		</div>
+	 		</div>
+	 		<button type="button" class="btn btn-lg" id="panic-button">Check Answer!</button>	
+	 		<div id="panic-info">
+	 			<h3> Correct! </h3>
+	 			<p> <i>RMS Titanic</i></p>
+		 		<p> The Titanic sank in the North Atlantic Ocean at 2:20 a.m. on April 15, 1912. </p>
+	 		</div><br>
+	 	<button type="button" class="btn btn-lg" id="panic-next">Next Room</button>	 
+		</div>
+
+
+    </body>
+
+</html>

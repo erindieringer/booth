@@ -41,7 +41,7 @@ app.get('/ticketing',function(req,res){
 
 });
 
-app.get('/uderwater',function(req,res){
+app.get('/underwater',function(req,res){
        
      res.sendFile(__dirname + '/public/underwater.html');
 

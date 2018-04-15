@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<link href="style/style.css" rel="stylesheet">
+		<script src="scripts/ballroom.js"></script>
+
+    </head>
+    <body>
+    	<img src="http://localhost:5000/IMG_6849.JPG" id="background-image" width="100%">
+    	<div class="container" align="center">
+    		<h2> Ballroom </h2>
+    		<p id="form-question">  People bustle around the ballroom, dancing to and enjoying the sound of the band. What song are they playing? </p>
+			
+			<div class="row" id="form-row">
+				<div class="col-md-4 col-md-offset-4">
+					<form align="left">
+						<div class="form-check">
+						    <input class="form-check-input" name="group100" type="radio" id="radio100">
+						    <label class="form-check-label" for="radio100"> Happy Birthday</label>
+						</div>
+						<div class="form-check">
+						    <input class="form-check-input"  name="group100" type="radio" id="radio101" checked>
+						    <label class="form-check-label" for="radio101">Call Me Maybes</label>
+						</div>
+						<div class="form-check">
+						    <input class="form-check-input" name="group100"  type="radio" id="radio102">
+						    <label class="form-check-label" for="radio102">My Heart Will Go On</label>
+						</div>
+						<div class="form-check">
+						    <input class="form-check-input" name="group100" type="radio" id="answer">
+						    <label class="form-check-label" for="answer">Songe d’Automne</label>
+						</div>
+				  </form>
+		 		</div>
+	 		</div>
+	 		<button type="button" class="btn btn-lg" id="ballroom-button">Check Answer!</button>	
+	 		<div id="ballroom-info">
+	 			<h3> Correct! </h3>
+	 			<p> <i>Songe d’Automne </i></p>
+		 		<p>While it isn’t known for certain, this song is likely one of the ones played by the ship’s 8-person band as the vessel was sinking, in an effort to calm the passengers. The band played all night, even after it was clear the ship was going to sink, and went down with the ship. </p>
+	 		</div>	<br>
+	 	<button type="button" class="btn btn-lg" id="ballroom-next">Next Room</button>	 
+		</div>
+
+    </body>
+
+</html>

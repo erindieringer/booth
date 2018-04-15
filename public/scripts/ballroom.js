@@ -55,6 +55,5 @@ $(function() {
 		$("#ballroom-info").append("<h4> It is now 11:50pm - 14 ft of water has poured into the front part of the ship and you’re starting to get a little worried. You should see if you can see anything from the deck!</h4>");
 
 	}
-	
 
 });

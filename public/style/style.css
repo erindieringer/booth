@@ -42,8 +42,10 @@ p {
 .btn {
  	background-color:#AA2929;
  	color:white;
- 	/*width:30%;*/
+ 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+ 	font-weight: light;
  }
+
 
  .row {
  	margin-top: 3%;
