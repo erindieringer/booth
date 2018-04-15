@@ -1,6 +1,6 @@
 $(function() {
 	var answer = false;
-	var transition = false
+	var transition = false;
 
 	$( document).ready(function(){
 		$("#ticket-info").css("visibility","hidden");

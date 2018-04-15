@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<link href="style/style.css" rel="stylesheet">
+		<script src="scripts/deck.js"></script>
+
+    </head>
+    <body>
+    	<img src="http://localhost:5000/IMG_6849.JPG" id="background-image" width="100%">
+    	<div class="container" align="center">
+    		<h2>Deck</h2>
+    		<p id="form-question">  What is the full name of the ship? </p>
+			<div class="row" id="form-row">
+				<div class="col-md-4 col-md-offset-4">
+					<form align="left">
+						<div class="form-check">
+						    <input class="form-check-input" name="group100" type="radio" id="radio100">
+						    <label class="form-check-label" for="radio100"> The Titanic </label>
+						</div>
+						<div class="form-check">
+						    <input class="form-check-input"  name="group100" type="radio" id="answer" checked>
+						    <label class="form-check-label" for="answer">RMS Titanic</label>
+						</div>
+						<div class="form-check">
+						    <input class="form-check-input" name="group100"  type="radio" id="radio102">
+						    <label class="form-check-label" for="radio102">The Unsinkable Titanic</label>
+						</div>
+						<div class="form-check">
+						    <input class="form-check-input" name="group100" type="radio" id="radio101">
+						    <label class="form-check-label" for="radio101"> USS Titanic</label>
+						</div>
+				  </form>
+		 		</div>
+	 		</div>
+	 		<button type="button" class="btn btn-lg" id="deck-button">Check Answer!</button>	
+	 		<div id="deck-info">
+	 			<h3> Correct! </h3>
+	 			<p> <i>RMS Titanic</i></p>
+		 		<p> RMS stands for Royal Mail Ship, meaning that the Titanic was carrying mail under contract with the Royal Mail.  </p>
+	 		</div>	<br>
+	 	<button type="button" class="btn btn-lg" id="deck-next">Next Room</button>	 
+		</div>
+
+
+    </body>
+
+</html>

@@ -1,5 +1,7 @@
 $(function() {
 	var answer = false;
+	var transition = false;
+
 	$(document).ready(function(){
 		$("#ballroom-info").css("visibility","hidden");
 		$("#ballroom-next").css("visibility","collapse");
@@ -16,7 +18,7 @@ $(function() {
 			$("#ballroom-info").empty()
 			addTransition();
 		} else {
-			window.location.replace('/ballroom');
+			window.location.replace('/deck');
 		}
 	});
 
