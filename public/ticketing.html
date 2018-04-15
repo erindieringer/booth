@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<link href="style/style.css" rel="stylesheet">
+		<script src="scripts/ticket.js"></script>
+
+    </head>
+    <body>
+    	<img src="http://localhost:5000/IMG_6849.JPG" id="background-image" width="100%">
+    	<div class="container" align="center">
+    		<h2> Ticketing Room </h2>
+    		<p id="form-question">  What is the name of one of the books on the bookshelf? (choose both or one) </p>
+			
+			<div class="row" id="form-row">
+				<div class="col-md-4 col-md-offset-4">
+					<form align="left">
+				  	<div class="form-group form-check">
+				    	<input type="checkbox" class="form-check-input" id="answer1">
+				    	<label class="form-check-label" for="answer1">From the Old World to the New</label>
+				  	</div>
+				  	<div class="form-group form-check">
+				    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    	<label class="form-check-label" for="exampleCheck1">How to Sink a Ship in 10 Days</label>
+				  	</div>
+				  	<div class="form-group form-check">
+				    	<input type="checkbox" class="form-check-input" id="answer2">
+				    	<label class="form-check-label" for="answer2">Mail Steamer Went Down In The Midatlantic</label>
+				  	</div>
+				  	<div class="form-group form-check">
+				    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    	<label class="form-check-label" for="exampleCheck1">2000 Leagues Under the Sea </label>
+				  	</div>
+				  </form>
+		 		</div>
+	 		</div>
+	 		<button type="button" class="btn btn-lg" id="ticket-button">Check Answer!</button>	
+	 		<div id="ticket-info">
+	 			<h3> Correct! </h3>
+	 			<p> <i>From the Old World to the New and Mail Steamer Went Down In The Midatlantic</i></p>
+		 		<p>Titanic passenger William Thomas Stead wrote both of these books decades before he set foot onboard as a passenger.  Legend has it these stories were based on a vision he had in the 1880’s and tell stories very similar to what happened to this ship! In one a White Star Line vessel had to come to the rescue of a sister vessel after it struck an iceberg and in the other a mail steamer wrecked and couldn’t save all of the passengers due to a lack of lifeboats.</p>
+	 		</div>	
+	 	<button type="button" class="btn btn-lg" id="ticket-next">Next Room</button>	 
+		</div>
+
+
+    </body>
+
+</html>
