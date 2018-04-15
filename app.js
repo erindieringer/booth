@@ -2,6 +2,9 @@ var express = require("express");
 var app = express();
 var morgan = require('morgan');
 
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
 app.use(express.static(__dirname + '/public'));
 app.use('/public', express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
@@ -53,6 +56,6 @@ app.get('/end',function(req,res){
 
 });
   
- app.listen(5000);
-
-console.log("Server listening at http://localhost:5000/");
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
