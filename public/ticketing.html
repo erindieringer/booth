@@ -17,35 +17,35 @@
     	<img src="IMG_6849.JPG" id="background-image" width="100%">
     	<div class="container" align="center">
     		<h2> Ticketing Room </h2>
-    		<p id="form-question">  What is the name of one of the books on the bookshelf? (choose both or one) </p>
-			
+    		<p id="form-question">  What is the name of one of the books on the bookshelf? (more than one answer may be right) </p>
 			<div class="row" id="form-row">
 				<div class="col-md-4 col-md-offset-4">
 					<form align="left">
 				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="answer1">
+				    	<input type="radio" class="form-check-input" name="group1" id="answer1">
 				    	<label class="form-check-label" for="answer1">From the Old World to the New</label>
 				  	</div>
 				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    	<input type="radio" class="form-check-input" name="group1" id="exampleCheck1">
 				    	<label class="form-check-label" for="exampleCheck1">How to Sink a Ship in 10 Days</label>
 				  	</div>
 				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="answer2">
+				    	<input type="radio" class="form-check-input" name="group1" id="answer2">
 				    	<label class="form-check-label" for="answer2">Mail Steamer Went Down In The Midatlantic</label>
 				  	</div>
 				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    	<input type="radio" class="form-check-input" name="group1" id="exampleCheck1">
 				    	<label class="form-check-label" for="exampleCheck1">2000 Leagues Under the Sea </label>
 				  	</div>
 				  </form>
+				  <p id="error-msg"> So close, try again </p>
 		 		</div>
 	 		</div>
 	 		<button type="button" class="btn btn-lg" id="ticket-button">Check Answer!</button>	
 	 		<div id="ticket-info">
 	 			<h3> Correct! </h3>
 	 			<p> <i>From the Old World to the New and Mail Steamer Went Down In The Midatlantic</i></p>
-		 		<p>Titanic passenger William Thomas Stead wrote both of these books decades before he set foot onboard as a passenger.  Legend has it these stories were based on a vision he had in the 1880’s and tell stories very similar to what happened to this ship! In one a White Star Line vessel had to come to the rescue of a sister vessel after it struck an iceberg and in the other a mail steamer wrecked and couldn’t save all of the passengers due to a lack of lifeboats.</p>
+		 		<p><i>Titanic</i> passenger William T. Stead wrote both of these books decades before he set foot onboard as a passenger.  Legend has it these stories were based on a vision he had in the 1880’s and tell stories very similar to what happened to this ship.</p>
 	 		</div>	<br>
 	 	<button type="button" class="btn btn-lg" id="ticket-next">Next Room</button>	 
 		</div>

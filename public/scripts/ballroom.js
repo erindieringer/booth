@@ -5,6 +5,7 @@ $(function() {
 	$(document).ready(function(){
 		$("#ballroom-info").css("visibility","hidden");
 		$("#ballroom-next").css("visibility","collapse");
+		$("#error-msg").css("visibility","collapse");
 	});
 	
 	$("#ballroom-button").click(function(e){
@@ -26,7 +27,8 @@ $(function() {
 	function checkBoxes(){
 		if ($("#answer").is(":checked")) { 
 			answer = true;
-			console.log('true');
+		} else {
+			$("#error-msg").css("visibility","visible");
 		}
 	}
 
@@ -52,7 +54,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#ballroom-info").append("<h4> It is now 11:50pm - 14 ft of water has poured into the front part of the ship and you’re starting to get a little worried. You should see if you can see anything from the deck!</h4>");
+		$("#ballroom-info").append("<h4> 11:50 PM <br><br> 14 ft of water has poured into the front part of the ship and you’re starting to get a little worried. <br><br>You should see if you can see anything from the deck!</h4>");
 
 	}
 

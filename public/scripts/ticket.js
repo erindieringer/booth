@@ -5,6 +5,8 @@ $(function() {
 	$( document).ready(function(){
 		$("#ticket-info").css("visibility","hidden");
 		$("#ticket-next").css("visibility","collapse");
+		$("#error-msg").css("visibility","collapse");
+
 	});
 	
 	$("#ticket-button").click(function(e){
@@ -26,6 +28,8 @@ $(function() {
 	function checkBoxes(){
 		if ($("#answer1").is(":checked") || $("#answer2").is(":checked")){ 
 			answer = true;
+		} else {
+			$("#error-msg").css("visibility","visible");
 		}
 	}
 
@@ -51,7 +55,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#ticket-info").append("<h4> It is now 11:40pm and you’ve just felt a large jolt! You hear someone say you’ve struck an iceberg, but you’re not worried. The Titanic is unsinkable, after all.</h4>");
+		$("#ticket-info").append("<h4>11:40 PM <br><br> You’ve just felt a large jolt! <br> You hear someone say you’ve struck an iceberg, but you’re not worried. The Titanic is unsinkable, after all.</h4>");
 
 	}
 

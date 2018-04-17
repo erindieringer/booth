@@ -5,6 +5,7 @@ $(function() {
 	$( document).ready(function(){
 		$("#water-info").css("visibility","hidden");
 		$("#water-next").css("visibility","collapse");
+		$("#error-msg").css("visibility","collapse");
 	});
 	
 	$("#water-button").click(function(e){
@@ -24,8 +25,11 @@ $(function() {
 
 
 	function checkBoxes(){
-		if (($("#answer1").is(":checked") || $("#answer2").is(":checked")) && ($("exampleCheck1").is(":checked") === false)) { 
+		if ($("#answer1").is(":checked") || $("#answer2").is(":checked")){ 
 			answer = true;
+		}
+		else {
+			$("#error-msg").css("visibility","visible");
 		}
 	}
 
@@ -51,7 +55,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#water-info").append("<h4> It is 2:17AM and the final SOS has been sent. The captain announces 'Every man for themselves'. </h4>");
+		$("#water-info").append("<h4>2:17 AM <br><br> The final SOS has been sent. <br><br> Captain Edward J. Smith announces 'Every man for themselves'. </h4>");
 
 	}
 

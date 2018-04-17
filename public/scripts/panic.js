@@ -5,6 +5,8 @@ $(function() {
 	$(document).ready(function(){
 		$("#panic-info").css("visibility","hidden");
 		$("#panic-next").css("visibility","collapse");
+		$("#error-msg").css("visibility","collapse");
+
 	});
 	
 	$("#panic-button").click(function(e){
@@ -26,8 +28,10 @@ $(function() {
 	function checkBoxes(){
 		if ($("#answer").val() === '02:20') {
 			answer = true;
+		}else {
+			$("#error-msg").css("visibility","visible");
 		}
-		console.log($("#answer").val());
+		
 	}
 
 	function changeScreen(){
@@ -38,10 +42,6 @@ $(function() {
 			$("#panic-button").css("visibility","collapse");
 
 		}
-		else {
-			console.log("try again bitch")
-		}
-
 	}
 
 	function deleteBoxes(){
@@ -52,7 +52,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#panic-info").append("<h4>Somehow its 2:05AM - the last lifeboat is dispatched without you, leaving you with only your life jacket. </h4>");
+		$("#panic-info").append("<h4>2:05 AM <br><br> The last lifeboat is dispatched without you, leaving you with only your life jacket. </h4>");
 	}
 
 });

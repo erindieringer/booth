@@ -5,6 +5,8 @@ $(function() {
 	$(document).ready(function(){
 		$("#artifact-info").css("visibility","hidden");
 		$("#artifact-next").css("visibility","collapse");
+		$("#error-msg").css("visibility","collapse");
+
 	});
 	
 	$("#artifact-button").click(function(e){
@@ -13,20 +15,15 @@ $(function() {
 	});
 
 	$("#artifact-next").click(function(e){
-		if (transition === false) {
-			transition = true;
-			$("#artifact-info").empty()
-			// addTransition();
-		} else {
-			window.location.replace('/end');
-		}
+		window.location.replace('/end');
 	});
 
 
 	function checkBoxes(){
 		if ($("#answer").is(":checked")) { 
 			answer = true;
-			console.log('true');
+		} else {
+			$("#error-msg").css("visibility","visible");
 		}
 	}
 
@@ -51,8 +48,6 @@ $(function() {
 		$("artifact-button").remove();
 	}
 
-	// function addTransition(){
-	// 	$("#artifact-info").append("<h4> 12:05AM - The call is given to start loading the lifeboats. You need to find the rest of your family and you’re starting to panic! </h4>");
-	// }
+
 
 });

@@ -17,7 +17,7 @@ h1 {
 h2 {
 	color:white;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	margin:10%;
+	margin:5%;
 	font-size: 2.3rem;
 }
 
@@ -29,7 +29,8 @@ h3 {
 h4 {
 	color:white;
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	margin:10%;
+	margin-left:10%;
+	margin-right:10%;
 }
 
 p {
@@ -64,7 +65,17 @@ p {
  }
 
 form {
-	margin:10%;
+	margin-right:10%;
+	margin-left:10%;
+	margin-top:5%;
+}
+
+#error-msg{
+	color:#AA2929;
+}
+
+img{
+	margin-top:5%;
 }
 
 @media only screen and (max-width: 500px){

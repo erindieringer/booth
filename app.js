@@ -55,7 +55,13 @@ app.get('/end',function(req,res){
      res.sendFile(__dirname + '/public/end.html');
 
 });
-  
+ 
+app.get('/end2',function(req,res){
+       
+     res.sendFile(__dirname + '/public/end2.html');
+
+});
+
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });

@@ -5,6 +5,8 @@ $(function() {
 	$(document).ready(function(){
 		$("#deck-info").css("visibility","hidden");
 		$("#deck-next").css("visibility","collapse");
+		$("#error-msg").css("visibility","collapse");
+
 	});
 	
 	$("#deck-button").click(function(e){
@@ -26,7 +28,8 @@ $(function() {
 	function checkBoxes(){
 		if ($("#answer").is(":checked")) { 
 			answer = true;
-			console.log('true');
+		} else {
+			$("#error-msg").css("visibility","visible");
 		}
 	}
 
@@ -52,7 +55,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#deck-info").append("<h4> 12:05AM - The call is given to start loading the lifeboats. You need to find the rest of your family and you’re starting to panic! </h4>");
+		$("#deck-info").append("<h4> 12:05 AM <br><br> The call is given to start loading the lifeboats. You need to find the rest of your family and you’re starting to panic! </h4>");
 	}
 
 });

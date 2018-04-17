@@ -16,35 +16,35 @@
     <body>
     	<img src="IMG_6849.JPG" id="background-image" width="100%">
     	<div class="container" align="center">
-    		<h2> Underwater Room </h2>
-    		<p id="form-question">  Look through the sand on the ocean floor to see what treasures you find from the ship. What did you find?</p>
-			
+    		<h2> Underwater </h2>
+    		<p id="form-question">  Look through the sand on the ocean floor to see what treasures lie beneath. What did you find?</p>
 			<div class="row" id="form-row">
 				<div class="col-md-4 col-md-offset-4">
 					<form align="center">
-				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="answer1">
-				    	<label class="form-check-label" for="answer1">A Blue Gem</label>
-				  	</div>
-				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				    	<label class="form-check-label" for="exampleCheck1">A Black Anchor</label>
-				  	</div>
-				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				    	<label class="form-check-label" for="exampleCheck1">A Rainbow Fish</label>
-				  	</div>
-				  	<div class="form-group form-check">
-				    	<input type="checkbox" class="form-check-input" id="answer2">
-				    	<label class="form-check-label" for="answer2">A White Ship</label>
-				  	</div>
+						<div class="form-check">
+						    <input class="form-check-input" name="group100" type="radio" id="answer1">
+						    <label class="form-check-label" for="answer1"> A Blue Gem</label>
+						</div><br>
+						<div class="form-check">
+						    <input class="form-check-input"  name="group100" type="radio" id="radio101">
+						    <label class="form-check-label" for="radio101">A Black Anchor</label>
+						</div><br>
+						<div class="form-check">
+						    <input class="form-check-input" name="group100"  type="radio" id="radio102">
+						    <label class="form-check-label" for="radio102">A Rainbow Fish</label>
+						</div><br>
+						<div class="form-check">
+						    <input class="form-check-input" name="group100" type="radio" id="answer2">
+						    <label class="form-check-label" for="answer2">A White Ship</label>
+						</div>
+				  	<p id="error-msg"> Oops try again </p>
 				  </form>
 		 		</div>
 	 		</div>
 	 		<button type="button" class="btn btn-lg" id="water-button">Check Answer!</button>	
 	 		<div id="water-info">
 	 			<h3> Correct! </h3>
-	 			<p> <i>A blue gem and a white ship </i></p>
+	 			<p> <i>A blue gem or a white ship </i></p>
 		 		<p>Congrats on finding your treasure! You get to keep your gem or ship as a reminder of your time in our booth :)</p>
 	 		</div>	<br>
 	 	<button type="button" class="btn btn-lg" id="water-next">Next Room</button>	 
