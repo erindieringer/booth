@@ -74,10 +74,14 @@ form {
 	color:#AA2929;
 }
 
-img{
+img {
 	margin-top:5%;
 }
-
+#king {
+	width:80%;
+	padding-left:5%;
+	padding-right:5%;
+}
 @media only screen and (max-width: 500px){
 	.container {
 		width:100%;

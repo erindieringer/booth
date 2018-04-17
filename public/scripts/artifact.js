@@ -15,7 +15,14 @@ $(function() {
 	});
 
 	$("#artifact-next").click(function(e){
-		window.location.replace('/end');
+		var num = getRandomInt(3);
+		if (num === 0){
+			window.location.replace('/end');
+		} else if (num === 1){
+			window.location.replace('/end2');
+		} else if (num === 2){
+			window.location.replace('/end3');
+		}
 	});
 
 
@@ -46,6 +53,10 @@ $(function() {
 		$("#form-row").remove();
 		$("#form-question").remove();
 		$("artifact-button").remove();
+	}
+
+	function getRandomInt(max) {
+  		return Math.floor(Math.random() * Math.floor(max));
 	}
 
 
