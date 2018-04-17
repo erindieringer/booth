@@ -55,7 +55,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#ticket-info").append("<h4>11:40 PM <br><br> You’ve just felt a large jolt! <br> You hear someone say you’ve struck an iceberg, but you’re not worried. The Titanic is unsinkable, after all.</h4>");
+		$("#ticket-info").append("<h4>11:40 PM <br><br> You just felt a large jolt! <br> You hear someone say you’ve struck an iceberg, but you’re not worried. The Titanic is unsinkable, after all.</h4>");
 
 	}
 

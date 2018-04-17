@@ -55,7 +55,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#water-info").append("<h4>2:17 AM <br><br> The final SOS has been sent. <br><br> Captain Edward J. Smith announces 'Every man for themselves'. </h4>");
+		$("#water-info").append("<h4>2:17 AM <br><br> The final SOS is sent. <br><br> Captain Edward J. Smith announces 'Every man for themselves'. </h4>");
 
 	}
 

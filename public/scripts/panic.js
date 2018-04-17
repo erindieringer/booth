@@ -52,7 +52,7 @@ $(function() {
 	}
 
 	function addTransition(){
-		$("#panic-info").append("<h4>2:05 AM <br><br> The last lifeboat is dispatched without you, leaving you with only your life jacket. </h4>");
+		$("#panic-info").append("<h4>2:05 AM <br><br> The last lifeboat leaves without you, now you only have your life jacket. </h4>");
 	}
 
 });
