@@ -1,6 +1,7 @@
 $(function() {
 	var answer = false;
 	var transition = false;
+	var tries = 0;
 
 	$(document).ready(function(){
 		$("#panic-info").css("visibility","hidden");
@@ -30,6 +31,10 @@ $(function() {
 			answer = true;
 		}else {
 			$("#error-msg").css("visibility","visible");
+			tries += 1;
+			if (tries === 2) {
+				$("#error-msg").text("Hint: It's in the morning");
+			}
 		}
 		
 	}
